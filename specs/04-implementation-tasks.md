@@ -12,7 +12,7 @@ Cada tarefa só pode ser marcada como concluída depois de satisfazer sua defini
   - Examinar visualmente logo, planta e site de referência.
   - **Pronto quando:** tokens visuais e comportamentos relevantes estiverem registrados.
 
-- [ ] **TS-0003 — Classificar dados**
+- [x] **TS-0003 — Classificar dados**
   - Separar fatos confirmados, inferências e placeholders.
   - **Pronto quando:** arquivo central representa os quatro modelos com níveis de confiança.
 
@@ -36,11 +36,11 @@ Cada tarefa só pode ser marcada como concluída depois de satisfazer sua defini
   - Criar versões de uso sem destruir o original.
   - **Pronto quando:** abertura e cabeçalho usam ativos nítidos e responsivos.
 
-- [ ] **TS-0202 — Preparar planta de referência**
+- [x] **TS-0202 — Preparar planta de referência**
   - Otimizar, recortar e associar apenas como material provisório do modelo correto.
   - **Pronto quando:** planta carrega sem distorção e possui alternativa textual.
 
-- [ ] **TS-0203 — Produzir conjunto visual da casa-piloto**
+- [x] **TS-0203 — Produzir conjunto visual da casa-piloto**
   - Hero, exterior, topo aberto, etapas e quatro ambientes.
   - **Pronto quando:** os ativos mantêm coerência suficiente para uma demonstração contínua.
 
@@ -124,5 +124,10 @@ Cada tarefa só pode ser marcada como concluída depois de satisfazer sua defini
   - Abrir preview funcional ou entregar URL/localização utilizável.
 
 ## Gate final
+
+- [x] **TS-0507 — Recuperar a demonstração interativa da Casa 1 (10/10/2026)**
+  - FR-003, FR-004, FR-005, FR-006; MOT-005; NFR-004, NFR-005, NFR-007; AC-002 a AC-005.
+  - **Pronto quando:** servidor responder HTTP 200; Casa 1 renderizar um único canvas WebGL com 19 conjuntos de móveis no estágio 100; arraste, roda, toque e pinça alterarem a câmera; cobertura manual e contextual funcionarem; construção puder ser revertida; capturas desktop/mobile inspecionadas e testes sem erros de console.
+  - Testes: TST-002, TST-003, TST-007, TST-008, verificador de interação da Casa 1.
 
 O projeto só está concluído quando AC-001 a AC-007 forem demonstrados e todos os testes críticos estiverem aprovados.

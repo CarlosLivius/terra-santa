@@ -1,0 +1,24 @@
+{
+  "project": "Terra Santa Casa 1 - Plan to 3D House",
+  "duration_seconds": 12,
+  "aspect_ratio": "9:16",
+  "fps": 24,
+  "reference_assets": [
+    {"file": "01_PLAN/casa1_plan_line_art.png", "role": "primary geometry reference"},
+    {"file": "02_GENERATED/casa1_isometric_cutaway.png", "role": "3D massing reference"},
+    {"file": "02_GENERATED/casa1_social_interior.png", "role": "social interior reference"},
+    {"file": "02_GENERATED/casa1_private_wing.png", "role": "private wing reference"}
+  ],
+  "main_prompt": "Create a single continuous architectural transformation video in which the exact received floor plan gradually becomes a complete conceptual 3D house. Preserve the long horizontal linear footprint, the relative position of walls, room divisions, openings, terraces and planted areas. Do not invent a second floor, extra wings or a different footprint. Use ivory walls, burnt-orange structural edges, warm wood, graphite shadows, translucent blue glazing and subtle soft-pink glazing accents. Begin with a clean architectural plan, raise the slab and walls, add openings and materials, then finish with the complete house in a landscaped condominium.",
+  "timeline": [
+    {"progress": 0.0, "time": "0.0-2.5s", "stage": "received floor plan"},
+    {"progress": 0.25, "time": "2.5-5.0s", "stage": "slab and walls"},
+    {"progress": 0.55, "time": "5.0-7.5s", "stage": "openings and materials"},
+    {"progress": 0.78, "time": "7.5-10.0s", "stage": "roof, furniture and landscape"},
+    {"progress": 1.0, "time": "10.0-12.0s", "stage": "complete house in the condominium"}
+  ],
+  "camera": {"movement": "start low and oblique near the ground, looking slightly upward, then rise and pull back into a high three-quarter aerial view showing the complete house", "lens": "architectural wide lens, no fisheye", "motion": "slow, stable, cinematic, single continuous move, no cuts"},
+  "environment": "beautiful contemporary condominium under development, warm sandy soil, soft concrete paths, restrained tropical planting, distant low houses, warm early-morning sunlight and long soft shadows",
+  "scroll_behavior": {"scrubbable": true, "progress_mapping": "video time maps linearly to scroll progress from 0 to 100 percent", "reverse_playback": true, "no_loop": true},
+  "negative_prompt": "generic luxury villa, second floor, extra wings, changing footprint, random room layout, warped walls, melting geometry, duplicated windows, floating furniture, camera cuts, fisheye lens, pool, cars, people, text, labels, dimensions, logo, watermark, unstable architecture"
+}

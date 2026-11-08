@@ -1,0 +1,30 @@
+:root {
+  --ivory: #f3e8d5;
+  --sand: #d9c5a7;
+  --clay: #b64217;
+  --clay-dark: #7d2d13;
+  --ink: #292724;
+  --leaf: #4d5a3d;
+  --white: #fff9ef;
+  --muted: #6d6358;
+  --line: #c4b59e;
+  --dark-line: #666156;
+  --glass: #759193;
+  --wood: #9b674b;
+  --roof: #675648;
+  --lawn: #abb78e;
+  --night: #253d40;
+  --light: #f7d997;
+  --art-orange: #e79312;
+  --art-blue: #5f9eae;
+  --art-pink: #e8a7b4;
+  --art-gray: #c5c7c5;
+  --wall: #e9ddc5;
+  --wall-shade: #cfbfa3;
+  --shadow: 0 24px 60px #29272418;
+  --serif: 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  --sans: 'Segoe UI', Arial, sans-serif;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 24px; --space-6: 32px; --space-7: 48px; --space-8: 64px;
+  --radius: 2px; --motion-fast: 180ms; --motion: 650ms; --motion-long: 900ms;
+}

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-10T16:51:48.626Z",
+  "results": [
+    {
+      "name": "desktop",
+      "renderer": "webgl",
+      "furniture": 19,
+      "drag": true,
+      "zoom": true,
+      "rooms": true,
+      "roof": true,
+      "reverse": true,
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "renderer": "webgl",
+      "furniture": 19,
+      "drag": true,
+      "zoom": true,
+      "rooms": true,
+      "roof": true,
+      "reverse": true,
+      "errors": []
+    }
+  ]
+}

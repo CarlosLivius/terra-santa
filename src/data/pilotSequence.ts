@@ -1,0 +1,45 @@
+/** Traced visual coordinates from the supplied image. No physical scale or approved room count. */
+export const pilotSequence = {
+  reference: '/assets/floor-plan-reference-provisional.webp',
+  referenceSize: { width: 1000, height: 201.875 },
+  foundation: { src: '/assets/casa1-foundation-generated-v2.png', x: 0, y: -66.4, width: 1000, height: 334.1014 },
+  materials: {
+    plaster: '#e9e5db', plasterShade: '#b8b5ab', roof: '#4c5556', roofSeam: '#778081',
+    glass: '#759a9d', soil: '#b1a08a', lawn: '#87946c', paving: '#c4c5bc', road: '#737d7b',
+  },
+  environmentTrees: [[-25, -75], [180, -90], [450, -85], [700, -85], [980, -70], [1050, 250]],
+  referenceAlt: 'Planta recebida como referência visual, com proporções horizontais e configuração a confirmar.',
+  notice: 'Referência visual recebida. Associação, configuração e proporções a confirmar; desenho sem escala.',
+  chapters: [
+    { progress: 0, key: 'plan', label: 'A planta recebida', eyebrow: '01 · ORIGEM', copy: 'Tudo começa com o desenho recebido. Observe o traço e a relação entre os espaços.' },
+    { progress: 25, key: 'walls', label: 'As linhas ganham volume', eyebrow: '02 · PAREDES', copy: 'O desenho permanece no chão enquanto as paredes se levantam sobre ele.' },
+    { progress: 50, key: 'openings', label: 'A luz encontra passagem', eyebrow: '03 · ABERTURAS', copy: 'Vãos e passagens aproximam o desenho da sensação de uma casa.' },
+    { progress: 75, key: 'roof', label: 'A cobertura se aproxima', eyebrow: '04 · COBERTURA', copy: 'Uma camada leve cobre os volumes. Role para cima para desfazer cada transformação.' },
+    { progress: 100, key: 'complete', label: 'A casa no terreno', eyebrow: '05 · PRESENÇA', copy: 'O conjunto encontra a terra. Agora abra o teto e continue a exploração.' },
+  ],
+  /** x1,z1,x2,z2; axes mapped to the original horizontal drawing. */
+  walls: [
+    [4, 4, 994, 4], [4, 4, 4, 196], [4, 196, 994, 196],
+    [60, 4, 60, 43], [60, 74, 60, 135],
+    [4, 119, 14, 119], [51, 119, 60, 119],
+    [60, 135, 86, 135], [193, 135, 218, 135],
+    [218, 51, 218, 196], [218, 51, 293, 51],
+    [237, 43, 237, 51], [237, 4, 237, 12],
+    [325, 51, 386, 51], [330, 51, 330, 109],
+    [330, 109, 336, 109], [416, 109, 423, 109],
+    [330, 168, 330, 196], [423, 51, 423, 109],
+    [416, 51, 498, 51], [531, 51, 535, 51],
+    [423, 168, 423, 196], [535, 51, 535, 196],
+    [726, 4, 726, 30], [726, 110, 726, 122],
+    [652, 122, 734, 122], [774, 122, 777, 122],
+    [715, 122, 715, 129], [715, 160, 715, 196],
+    [774, 158, 774, 196], [994, 4, 994, 196],
+  ] as readonly (readonly [number, number, number, number])[],
+  roofs: [
+    [4, 4, 726, 51], [4, 51, 60, 119], [60, 51, 218, 135],
+    [218, 51, 330, 196], [330, 51, 423, 109],
+    [423, 51, 535, 196], [535, 51, 715, 196], [715, 129, 774, 196],
+  ] as readonly (readonly [number, number, number, number])[],
+  windows: [[86, 135, 193, 135], [336, 109, 416, 109], [330, 113, 330, 168], [423, 113, 423, 168], [726, 30, 726, 110]] as readonly (readonly [number, number, number, number])[],
+  trees: [[74, 169], [185, 173], [390, 165], [838, 167], [950, 166]] as readonly (readonly [number, number])[],
+}
